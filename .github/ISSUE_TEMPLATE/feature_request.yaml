@@ -1,0 +1,40 @@
+name: 功能許願 / Feature request
+description: 建立功能許願以幫助我們改進產品 / Suggest an idea for this project
+title: '[Feature] '
+labels: []
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝您花時間填寫功能許願！
+        Thanks for taking the time to fill out this feature request!
+  - type: input
+    id: contact
+    attributes:
+      label: 聯絡方式 / Contact Details
+      description: 如果我們需要更多資訊，如何與您聯絡？/ How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: textarea
+    id: describe-the-feature
+    attributes:
+      label: 需求描述 / Describe the feature
+      description: 為什麼會想要這個功能？在什麼情境下會使用它？ / Why do you want this feature? In what situation would you use it?
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-use
+    attributes:
+      label: 操作方式 / How to use
+      description: 如果有這功能，理想中它會是怎麼操作呢？ / If this feature exists, how would it ideally work?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 螢幕截圖 / Screenshots
+      description: 如果可以提供問題/許願相關的截圖，可以幫我們更清楚、快速的理解問題喔！/ If you can provide screenshots related to the problem/request, it will help us understand the issue more clearly and quickly!
+      placeholder: 請拖曳圖片至輸入框當中，或是點選下方的 "Paste, drop, or click to add files". / Please drag images into the input box, or click "Paste, drop, or click to add files" below.
