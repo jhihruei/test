@@ -18,6 +18,14 @@ body:
     validations:
       required: false
   - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 預期行為 / Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Tell us what is the behavior you expected to see?
+    validations:
+      required: true
+  - type: textarea
     id: what-happened
     attributes:
       label: What happened?
@@ -41,3 +49,16 @@ body:
        2. Click on '....'
        3. Scroll down to '....'
        4. See error
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 螢幕截圖 / Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+  - type: input
+    id: occurrence-time
+    attributes:
+      label: Time of occurrence
+      description: 請提供錯誤發生的時間（如果記得的話）/ Please provide when the error occurred (if you remember).
+      placeholder: ex. 2026/01/01 09:00
+    validations:
+      required: false
