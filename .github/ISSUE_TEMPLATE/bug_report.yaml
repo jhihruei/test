@@ -24,7 +24,7 @@ body:
       label: 描述錯誤 / Describe the bug
       description: 請清楚簡潔地描述這個錯誤 / A clear and concise description of what the bug is.
       placeholder: 告訴我們您看到了什麼！/ Tell us what you see!
-      value: '按鈕無法點擊 / A button is not clickable'
+      value: '按鈕無法點擊 / A button is not clickable.'
     validations:
       required: true
   - type: textarea
@@ -41,10 +41,9 @@ body:
       label: 重現步驟 / How to reproduce?
       description: 重現此行為的步驟 / Steps to reproduce the behavior.
       placeholder: |
-        1. 前往 '...' / Go to '...'
-        2. 點擊 '....' / Click on '....'
-        3. 向下滾動至 '....' / Scroll down to '....'
-        4. 看到錯誤 / See error
+        1.
+        2.
+        3.
       value: |
        1. 前往 '...' / Go to '...'
        2. 點擊 '....' / Click on '....'
@@ -55,6 +54,7 @@ body:
     attributes:
       label: 螢幕截圖 / Screenshots
       description: 如果適用，請新增截圖來幫助說明您的問題 / If applicable, add screenshots to help explain your problem.
+      placeholder: 請拖曳圖片至輸入框當中，或是點選下方的 Paste, drop, or click to add files.
   - type: input
     id: occurrence-time
     attributes:
@@ -63,3 +63,8 @@ body:
       placeholder: ex. 2026/01/01 09:00
     validations:
       required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 額外資訊 / Additional context
+      description: 任何與此錯誤有關的額外資訊 / Add any other context about the problem here.
