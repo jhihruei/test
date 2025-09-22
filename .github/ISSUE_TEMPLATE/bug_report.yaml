@@ -1,5 +1,5 @@
-name: 錯誤回報 / Bug report
-description: 建立錯誤回報以幫助我們改進功能 / Create a report to help us improve
+name: '錯誤回報 / Bug report'
+description: '建立錯誤回報以幫助我們改進功能 / Create a report to help us improve'
 title: '[Bug] '
 labels: ['bug']
 assignees: []
@@ -10,56 +10,62 @@ body:
       value: |
         感謝您花時間填寫此錯誤回報！
         Thanks for taking the time to fill out this bug report!
+        
   - type: input
     id: contact
     attributes:
-      label: 聯絡方式 / Contact Details
-      description: 如果我們需要更多資訊，如何與您聯絡？/ How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: '聯絡方式 / Contact Details'
+      description: '如果我們需要更多資訊，如何與您聯絡？/ How can we get in touch with you if we need more info?'
+      placeholder: 'ex. email@example.com'
     validations:
       required: false
+      
   - type: textarea
     id: describe-the-bug
     attributes:
-      label: 描述錯誤 / Describe the bug
-      description: 請清楚簡潔地描述這個錯誤 / A clear and concise description of what the bug is.
-      placeholder: 告訴我們您看到了什麼！/ Tell us what you see!
-      value: '按鈕無法點擊 / A button is not clickable.'
+      label: '描述錯誤 / Describe the bug'
+      description: '請清楚簡潔地描述這個錯誤 / A clear and concise description of what the bug is.'
+      placeholder: '告訴我們您看到了什麼！/ Tell us what you see!'
     validations:
       required: true
+      
   - type: textarea
     id: expected-behavior
     attributes:
-      label: 預期行為 / Expected behavior
-      description: 請描述您預期看到的行為 / A clear and concise description of what you expected to happen.
-      placeholder: 告訴我們您預期看到的行為是什麼？/ Tell us what is the behavior you expected to see?
+      label: '預期行為 / Expected behavior'
+      description: '請描述您預期看到的行為 / A clear and concise description of what you expected to happen.'
+      placeholder: '告訴我們您預期看到的行為是什麼？/ Tell us what is the behavior you expected to see?'
     validations:
       required: true
+      
   - type: textarea
     id: to-reproduce
     attributes:
-      label: 重現步驟 / How to reproduce?
-      description: 重現此行為的步驟 / Steps to reproduce the behavior.
+      label: '重現步驟 / How to reproduce?'
+      description: '重現此行為的步驟 / Steps to reproduce the behavior.'
       value: |
-        1.
-        2.
+        1. 
+        2. 
         3. 
+        
   - type: textarea
     id: screenshots
     attributes:
-      label: 螢幕截圖 / Screenshots
-      description: 如果適用，請新增截圖來幫助說明您的問題 / If applicable, add screenshots to help explain your problem.
-      placeholder: 請拖曳圖片至輸入框當中，或是點選下方的 "Paste, drop, or click to add files".
+      label: '螢幕截圖 / Screenshots'
+      description: '如果適用，請新增截圖來幫助說明您的問題 / If applicable, add screenshots to help explain your problem.'
+      placeholder: '請拖曳圖片至輸入框當中，或是點選下方的 "Paste, drop, or click to add files". / Please drag images into the input box, or click "Paste, drop, or click to add files" below.'
+      
   - type: input
     id: occurrence-time
     attributes:
-      label: 發生時間/ Time of occurrence
-      description: 請提供錯誤發生的時間/ Please provide when the error occurred.
-      placeholder: ex. 2026/01/01 09:00
+      label: '發生時間 / Time of occurrence'
+      description: '請提供錯誤發生的時間/ Please provide when the error occurred.'
+      placeholder: 'ex. 2026/01/01 09:00'
     validations:
       required: false
+      
   - type: textarea
     id: additional-context
     attributes:
-      label: 額外資訊 / Additional context
-      description: 任何與此錯誤有關的額外資訊 / Add any other context about the problem here.
+      label: '額外資訊 / Additional context'
+      description: '任何與此錯誤有關的額外資訊 / Add any other context about the problem here.'
